@@ -122,6 +122,7 @@ int main(){
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do programa\n");
 		printf("Opção: ");	
 		
 		scanf("%s", &opcao); // %s define que é para o comando scanf preencher o valor de uma variável do tipo string e o "& + opcao" é para indicar a variavel a ser preenchida, no caso a variavel opcao
@@ -139,6 +140,10 @@ int main(){
 				break;
 			case '3':
 				deletar();
+				break;
+			case '4':
+				printf("obrigado por usar o sistema <3");
+				return 0;
 				break;
 			default:
 				printf("essa opção não está disponível :/\n");
